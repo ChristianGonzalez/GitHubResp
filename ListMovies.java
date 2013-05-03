@@ -76,7 +76,7 @@ public class ListMovies {
 	private static Movie getMovie(ResultSet movies){
 		
 		try{
-			String title = movies.getString("Title");
+			String title = movies.getString("Title"); //names of the mysql sections
 			int year = movies.getInt("Year");
 			double price = movies.getDouble("price");
 			return new Movie(title, year, price);
